@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    *{
+        padding:0px;
+        margin:0px;
+    }
+    #nav-bar{
+        background-color: black;
+        width:auto;
+        height:50px;
+        display: flex;
+        align-items: center;
+    }
+    #icon{
+        color:white;
+        font-size: 45px;
+    }
+    a{
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        text-decoration: none;
+        margin:90px;
+        padding:2%;
+    }
+    img{
+        width:100%;
+        height:680px;
+    }
+    .box{
+        position: absolute;
+        top: 30%; 
+        left: 5%;
+        color:white;
+        font-size: 25px;
+    }
+    .box1{
+        padding:20px;
+        width:600px;
+        font-weight: bold;
+        font-family: inherit;
+    }
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-shadow: 0px 0px 20px 2px,rgba(0,0,0,.1);
+    }
+  
+    .skill {
+        width: 400px;
+        height:200px;
+        padding: 20px;
+        margin: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        transition: 1s;
+        box-shadow: 0px 0px 20px 2px rgba(0,0,0,.1);
+        background-color: plum;
+    }
+    .skill:hover{
+        transform: scale(1.1);
+    }
+    .skill h3 {
+        margin-top: 0;
+    }
+  
+    .skill p {
+        margin-bottom: 0;
+    }
+    i{
+        font-size: 40px;
+    }
+    .head{
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        font-display:initial;
+    }
+    hr{
+        height:20px;
+        background-color:rgba(128, 128, 128, 0.208);
+        list-style: none;
+        border-top:2px;
+        border-bottom:2px;
+        border-radius:10px;
+    }
+    #projects{
+        display: flex;
+        margin-left:7%;
+        padding:30px;
+        width:500px;
+        height:auto;
+        border:2px solid transparent;
+    }
+
+    .box3{
+        padding:25px;
+        background-color: white;
+        width:500px;
+        height:auto;
+        color:black;
+        border:2px solid rgba(46, 43, 43, 0.084);
+        border-radius: 10px;
+        margin:30px;
+        box-shadow:0px 0px 20px 2px rgba(0,0,0,.1);
+    }
+    .box4{
+        padding:25px;
+        background-color: white;
+        width:500px;
+        height:auto;
+        color:black;
+        border:2px solid rgba(46, 43, 43, 0.084);
+        border-radius: 10px;
+        margin:30px;
+        box-shadow:0px 0px 20px 2px rgba(0,0,0,.1);
+    }
+    .img1{
+        width:500px;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+    .resume{
+        padding:30px;
+        width:500px;
+        height:200px;
+        box-shadow:0px 0px 20px 2px rgba(0,0,0,.1);
+        margin:50px;
+        border:1px light grey;
+        border-radius:10px;
+        align-items: center;
+        justify-content: center;
+        background-color:plum;
+    }
+    .resume:hover{
+        background-color:rgba(221, 160, 221, 0.505);
+    }
+    .resume-link {
+        display: inline-block;
+        padding: 10px 10px;
+        background-color: #c300ffda;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        width:250px;
+    }
+    .resume-link:hover {
+        background-color:rgba(136, 4, 192, 0.888);
+    }
+    #content{
+        display: flex;
+        margin-left:7%;
+        padding:25px;
+    }
+    .container{
+        width:500px;
+        height:auto;
+        box-shadow:0px 0px 20px 2px rgba(0,0,0,.1);
+        margin:50px;
+        border:1px light grey;
+        border-radius:10px;
+        align-items: center;
+        justify-content: center;
+        background-color: plum;
+    }
+    .contact-section {
+        background-color: #f4f4f4;
+        padding: 50px 0;
+        text-align: center;
+    }
+    .contact-info {
+        margin-bottom: 20px;
+    }
+    .contact-info p {
+        margin: 5px 0;
+    }
+    .para{
+        padding:20px;
+        width:500px;
+        font-size: 25px;
+        font-family: Arial;
+        color:grey;
+        flex:1;
+    }
+    .cont-inf{
+        color:black;
+    }
+    .footer {
+        margin-top:10%;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    @keyframes slideleft{
+        from{
+        transform: translateX(-300px);
+        }
+        to{
+        transform:translateX(0);
+        }
+    }
+    .box{
+        animation: slideleft 2s ease-in-out forwards;
+        color:white;
+    }
+    .box1 :nth-child(2){
+        animation:slideleft 5s 3s linear forwards;
+    }
+</style>
+</head>
+<body>
+    <section>
+        <div id="nav-bar">
+            <i id="icon" class="fa-solid fa-user-tie"></i>
+            <a href="#">About Me</a>
+            <a href="mailto:simplypallun7@gmail.com" href="tel:+1234567890">Contact</a>
+            <a href="C:\Users\simpl\Desktop\Resume.pdf" download>Resume</a>
+            <a href="#" id="proj">Projects</a>
+        </div>
+        <div id="container1">
+            <img src=C:\Users\simpl\Desktop\back.png>
+            <div class="box">
+                <h1>"Hi I am Bodala Pallavi"👋</h1>
+                <div class="box1">
+                    <p >As web developer, I specialize in crafting immersive digital experiences through the mastery of various programming languages and technologies. With expertise in HTML, CSS, and JavaScript, I architect visually stunning and interactive websites that captivate users.</p>
+                    <a href="https://www.linkedin.com/in/bodala-pallavi-5710ba259" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://github.com/simplypallu-7" target="_blank"><i class="fa-brands fa-github"></i></a>
+               </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h1 class="head">Skills</h1>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i><h3>HTML</h3>
+                  <p style="font-family: Arial;">Proficient in writing semantic HTML markup.</p>
+                </div>
+                
+                <div class="skill">
+                    <i class="fa-brands fa-css3-alt"></i><h3>CSS</h3>
+                  <p style="font-family: Arial;">Skilled in styling web pages using CSS, including Flexbox and Grid layouts.</p>
+                </div>
+                
+                <div class="skill">
+                    <i class="fa-brands fa-js"></i><h3>JavaScript</h3>
+                  <p style="font-family: Arial;">Experience in building interactive and dynamic web applications using JavaScript.</p>
+                </div>
+        </div>
+        <br>
+        
+        <div id="content">
+            <div class="resume"><br>
+                <h1 class="head">Resume</h1>
+                <a class="resume-link" href="C:\Users\simpl\Desktop\Resume.pdf" download>Download Resume</a>
+            </div>
+            <div class="container"><br>
+                <h2 class="head">Contact Information</h2>
+                <div class="contact-info">
+                    <p class="para">Email: <a class="cont-inf" href="mailto:your_email@example.com">simplypallun7@gmail.com</a></p>
+                    <p class="para">Phone: <a class="cont-inf" href="tel:+1234567890">+91 965XXXXXXX</a></p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2024 Pallavi. All rights reserved.</p>
+            <nav>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Contact Us</a>
+            </nav>
+          </footer>
+    </section>
+    <!-- <script>
+        document.getElementById("proj").addEventListener('click',function(event){
+            event.preventDefault();
+            document.getElementById("projects").scrollIntoView({behavior:'smooth'});
+        });
+    </script> -->
+</body>
+</html>
